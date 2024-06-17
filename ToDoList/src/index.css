@@ -54,15 +54,29 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+input[type="text"]{
+  font-size: 1.6em;
+  padding: .1em;
+}
+
+ol{
+  list-style-type: none;
+  padding: 0;
+}
+
+li{
+  padding: 10px;
+  border: 1px solid;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.Text{
+  flex: 1;
+}
+
+.MoveButton, .DeleteButton{
+  margin-left: 5px;
+  font-size: .8em;
 }
